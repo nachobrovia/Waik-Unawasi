@@ -1,0 +1,148 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* hace que la imagen se ajuste */
+}
+
+.menu-title {
+    color: #333;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 34px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-title span {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-item h2 {
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.menu-item p {
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    color: rgb(46 45 45);
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.imagen-container-empanada {
+    border-radius: 4px;
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url('./images/empanadasCharque.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.16);
+}
+
+.imagen-container-lomo {
+    border-radius: 4px;
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url('./images/lomo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.16);
+}
+
+.imagen-container-helado {
+    border-radius: 4px;
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url('./images/heladoCoca.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.16);
+}
+
+.platos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.platos h3 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.platos ul li {
+    font-size: 1.1rem;
+    color: rgb(46 45 45);
+    line-height: 1.5rem;
+    text-align: center;
+    list-style: none;
+
+}
+
+.platos ul li span {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #333;
+    padding-left: 3px;
+}
+
+.button {
+   display: grid;
+   justify-content: center;
+   font-size: 1.5rem;
+   color: #a75e06;
+   font-weight: bold;
+   text-decoration: none;
+   width: 100%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.button .click {
+    width: 30px;
+    height: 30px;
+    margin-left: 63px;
+    background-image: url('./images/click.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
